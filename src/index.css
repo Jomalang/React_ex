@@ -2,6 +2,7 @@
   --primaryColor: #0e3557;
   --secondColor: #20547b;
   --mainWhite: #fff;
+  --mainGray: #cccccc;
   --mainBlack: #222;
   --mainRed: #c45151;
   --mainGreen: #4caf50;
@@ -20,4 +21,34 @@ body {
 h1 {
   color: var(--mainWhite);
   margin: 1rem 0;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.btn-icon {
+  margin-left: 0.75rem;
 }

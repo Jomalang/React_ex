@@ -1,0 +1,10 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  list-style-type: none;
+  border: none;
+  padding: 0;
+}

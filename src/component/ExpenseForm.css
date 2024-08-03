@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form-center {
+  display: flex;
+}
+
+.form-group {
+  flex: 1;
+  padding: 1rem 0.75rem;
+}
+
+label {
+  display: block;
+  color: var(--secondColor);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--secondColor);
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}

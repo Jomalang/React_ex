@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import "./ExpenseForm.css";
+import { MdSend } from "react-icons/md";
 
 export class ExpenseForm extends Component {
   render() {
     return (
-      <form>
+      <form className="form">
         <div className="form-center">
           <div className="form-group">
             <label htmlFor="charge">지출 항목</label>
@@ -16,18 +18,19 @@ export class ExpenseForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="price">비용</label>
+            <label htmlFor="amount">비용</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
-              id="price"
-              name="price"
+              id="amount"
+              name="amount"
               placeholder="예) 12000"
             />
           </div>
         </div>
         <button type="submit" className="btn">
           확인
+          <MdSend className="btn-icon" />
         </button>
       </form>
     );
