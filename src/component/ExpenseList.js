@@ -19,7 +19,7 @@ const ExpenseList = ({ expenses, handleDelete, handleEdit, clearItems }) => {
       </ul>
       {expenses.length > 0 && (
         <button className="btn" onClick={clearItems}>
-          목록 지우기<MdDelete className="btn-icon"></MdDelete>
+          목록 삭제<MdDelete className="btn-icon"></MdDelete>
         </button>
       )}
     </div>
